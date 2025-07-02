@@ -1,13 +1,14 @@
 "use client";
 
-import DiceCanvasWrapper from './components/DiceCanvasWrapper'
+// import DiceCanvasWrapper from './components/DiceCanvasWrapper'
 import FeatureBlock from './components/FeatureBlock'
-import SectionDivider from './components/SectionDivider'
-import Header from './components/Header'
-import dynamic from 'next/dynamic'
-import { ArrowRightIcon, CalendarIcon } from '@heroicons/react/24/outline';
+// import SectionDivider from './components/SectionDivider'
+// import Header from './components/Header'
+// import dynamic from 'next/dynamic'
+// import { ArrowRightIcon, CalendarIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
-const SearchClient = dynamic(() => import("./components/SearchClient"), { ssr: false });
+// const SearchClient = dynamic(() => import("./components/SearchClient"), { ssr: false });
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center">
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
-          <img src="/images/headshot.jpg" alt="Daniel Berryman" className="absolute inset-0 w-full h-full object-cover" />
+          <Image src="/images/headshot.jpg" alt="Daniel Berryman" className="absolute inset-0 w-full h-full object-cover" />
         </div>
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
           <div className="w-full h-full flex items-center justify-center">
@@ -99,10 +100,9 @@ export default function Home() {
       </div> */}
       <div className="p-5 flex flex-col gap-10">
         <FeatureBlock
-          pretitle="I'm a versatile"
           title="Performer"
           subtitle="One Voice. Many Worlds. Always Human."
-          description="I’m a performer who moves fluidly between worlds—opera, musical theatre, and popular music. Trained as a tenor and storyteller, I bring emotional clarity and vocal versatility to every stage I step on. Whether I’m singing Puccini, Sondheim, or Paul Simon, my goal is the same: to connect, to communicate, and to create moments that feel alive."
+          description="I&apos;m a performer who moves fluidly between worlds—opera, musical theatre, and popular music. Trained as a tenor and storyteller, I bring emotional clarity and vocal versatility to every stage I step on. Whether I’m singing Puccini, Sondheim, or Paul Simon, my goal is the same: to connect, to communicate, and to create moments that feel alive."
           imageSrc="/images/singer3.png"
           imagePosition="right"
           actions={[
@@ -124,7 +124,6 @@ export default function Home() {
           ]}
         />
         <FeatureBlock
-          pretitle="I'm a versatile"
           title="Voice Teacher"
           subtitle="Targeted Awareness. Deep Listening."
           description="My teaching is rooted in the old tenors—those who sang with ease, not force. That sound changed my singing, and now it shapes how I teach. I focus on clean cord closure, breath coordination, and subtle muscular control so singers can unlock flexibility across any style."
@@ -150,7 +149,6 @@ export default function Home() {
       </div>
       <div className="p-5 flex flex-col gap-10">
         <FeatureBlock
-          pretitle="I'm a"
           title="Software Engineer"
           subtitle="Engineer the Solution. Elevate the System."
           description="I approach software engineering with curiosity, precision, and a drive to improve not just features, but the way we build them. I care about clean execution, scalable systems, and the processes that make great work repeatable. Success isn’t just shipping code—it’s learning from it, refining it, and building stronger foundations for the next problem to solve."
@@ -171,7 +169,6 @@ export default function Home() {
           ]}
         />
         <FeatureBlock
-          pretitle="I'm your"
           title="Primary Care Technologist"
           subtitle="Tech support for humans—not systems."
           description="As a Primary Care Technologist my goal is to help you understand what you actually need, fix what’s broken, and build systems that support YOUR life—not just enrich the system. My goal is to keep you in charge of your tools, your data, and your direction. I don’t work for the system. I work for you—with clarity, care, and a focus on sovereignty."
@@ -198,10 +195,9 @@ export default function Home() {
       </div>
       <div className="p-5 flex flex-col gap-10">
         <FeatureBlock
-          pretitle="I'm your"
           title="Theatre For The World"
           subtitle="Theater Belongs to the Makers."
-          description="We’re building digital tools and data platforms that invest in the people behind the performance—not to profit from their creativity, but to amplify it. Inspired by models like the Wikimedia Foundation, we believe in infrastructure that supports the community rather than extracting from it. This isn’t about users. It’s about contributors. It's about reclaiming our role not as the product, but the producers—of culture, of knowledge, of the next generation of theater. The future of theater isn’t something we wait for. It’s something we build, together."
+          description="We&apos;re building digital tools and data platforms that invest in the people behind the performance—not to profit from their creativity, but to amplify it. Inspired by models like the Wikimedia Foundation, we believe in infrastructure that supports the community rather than extracting from it. This isn&apos;t about users. It&apos;s about contributors. It&apos;s about reclaiming our role not as the product, but the producers—of culture, of knowledge, of the next generation of theater. The future of theater isn&apos;t something we wait for. It&apos;s something we build, together."
           imageSrc="/images/tftw.png"
           imageAlt="3D Dice"
           imagePosition="right"
@@ -220,40 +216,40 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row p-6 gap-7 mb-5">
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
-            <img src="/images/lens.png" alt="Lenses" className="absolute inset-0 w-full h-full object-cover rounded" />
+            <Image src="/images/lens.png" alt="Lenses" className="absolute inset-0 w-full h-full object-cover rounded" />
           </div>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Phase 1: Lenses</h2>
             <p className="text-lg italic text-gray-700 mb-6">A shift in how you see.</p>
             <p className="text-base text-gray-600">
               Before we act, we learn to see. Phase 1 is about discovering the invisible structures behind voice,
-              tech, and self — and learning to notice what you’ve always missed. Because true freedom starts with clear sight.
+              tech, and self — and learning to notice what you&apos;ve always missed. Because true freedom starts with clear sight.
             </p>
           </div>
         </div>
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
-            <img src="/images/guide.png" alt="Travel Guides" className="absolute inset-0 w-full h-full object-cover rounded" />
+            <Image src="/images/guide.png" alt="Travel Guides" className="absolute inset-0 w-full h-full object-cover rounded" />
           </div>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Phase 2: Travel Guides</h2>
             <p className="text-lg italic text-gray-700 mb-6">Your first steps into the landscape.</p>
             <p className="text-base text-gray-600">
               Once you see clearly you need a roadmap. Travel Guides are practical, compassionate supports for implementation — tools, templates, coaching, and companionship
-              that help you move through uncertainty and build what’s true.
+              that help you move through uncertainty and build what&apos;s true.
             </p>
           </div>
         </div>
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
-            <img src="/images/body.png" alt="Embodiment" className="absolute inset-0 w-full h-full object-cover rounded" />
+            <Image src="/images/body.png" alt="Embodiment" className="absolute inset-0 w-full h-full object-cover rounded" />
           </div>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Phase 3: Embodiment</h2>
             <p className="text-lg italic text-gray-700 mb-6">When the journey becomes you.</p>
             <p className="text-base text-gray-600">
               Embodiment is the quiet revolution that happens when clarity and practice take root.
-              It's no longer about what you’re doing — it’s about who you’ve become. This phase is marked by
+              It&apos;s no longer about what you&apos;re doing — it&apos;s about who you&apos;ve become. This phase is marked by
               integration, presence, and ease: the blueprint lives in your bones.
             </p>
           </div>

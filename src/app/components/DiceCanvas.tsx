@@ -2,7 +2,7 @@
 'use client'
 
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, ContactShadows, Text } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { useEffect, useRef, useState } from 'react'
 
 import * as THREE from 'three'
@@ -88,7 +88,7 @@ function SpinningDice() {
     console.log("Label Positions:", labels.map(l => l.position))
 
     setLabelPositions(labels)
-  }, [geometry])
+  }, [labelPositions, geometry])
 
 
   useEffect(() => {
