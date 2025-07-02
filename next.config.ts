@@ -1,10 +1,18 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import type { NextConfig } from 'next';
+
+const repo = '/porfolio-2025'; // <-- ✅ CHANGE THIS to match your repo name
+const isGhPages = process.env.DEPLOY_TARGET === 'gh-pages';
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  // Optional: if deploying to a subpath like username.github.io/repo-name
-  basePath: '/portfolio-2025',
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  basePath: isGhPages && isProd ? `/${repo}` : '',
+  assetPrefix: isGhPages && isProd ? `/${repo}/` : '',
 };
 
 export default nextConfig;
