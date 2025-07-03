@@ -51,24 +51,42 @@ export default function Home() {
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
           <div className="w-full h-full flex items-center justify-center">
             <div className="w-full h-full grid grid-cols-3 grid-rows-2">
-              <button className="w-full font-bold p-3 bg-slate-400 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
-                See performances
-              </button>
-              <button className="w-full font-bold p-3 bg-slate-100 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
-                Join a voice workshop
-              </button>
-              <button className="w-full font-bold p-3 bg-slate-200 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
-                Book voice lessons
-              </button>
-              <button className="w-full font-bold p-3 bg-slate-200 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
-                Run tech audits
-              </button>
-              <button className="w-full font-bold p-3 bg-slate-300 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
-                Get primary tech care
-              </button>
-              <button className="w-full font-bold p-3 bg-slate-400 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
-                Buy tech tools
-              </button>
+              <a 
+                href="https://www.notion.so/22572fd5449b809eafc2ca95141e5f22?v=22572fd5449b80c48ecf000c5b60181a&source=copy_link"
+                target="_blank"
+                className="w-full font-bold p-3 bg-slate-400 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
+                <span className='text-center'>See performances</span>
+              </a>
+              <a
+                href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                target="_blank"
+                className="w-full font-bold p-3 bg-slate-100 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
+                <span className='text-center'>Join a voice workshop</span>
+              </a>
+              <a 
+                href="https://calendly.com/danielberrymanvoice/lesson"
+                target="_blank"
+                className="w-full font-bold p-3 bg-slate-200 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
+                <span className='text-center'>Book voice lessons</span>
+              </a>
+              <a
+                href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                target='_blank'
+                className="w-full font-bold p-3 bg-slate-200 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
+                <span className='text-center'>Run tech audits</span>
+              </a>
+              <a
+                href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                target='_blank'
+                className="w-full font-bold p-3 bg-slate-300 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
+                <span className='text-center'>Get primary tech care</span>
+              </a>
+              <a
+                href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+                target='_blank'
+                className="w-full font-bold p-3 bg-slate-400 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
+                <span className='text-center'>Buy tech tools</span>
+              </a>
             </div>
           </div>
         </div>
@@ -138,7 +156,7 @@ export default function Home() {
           actions={[
             {
               label: "Book a Lesson", onClick: () => {
-                window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+                window.open("https://calendly.com/danielberrymanvoice/lesson", "_blank");
               }
             }
           ]}
