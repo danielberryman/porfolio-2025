@@ -40,7 +40,13 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center">
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
-          <Image src="/images/headshot.jpg" alt="Daniel Berryman" className="absolute inset-0 w-full h-full object-cover" />
+          <Image
+            src="/images/headshot.jpg"
+            alt="Daniel Berryman"
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1000}
+            height={1000}
+          />
         </div>
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
           <div className="w-full h-full flex items-center justify-center">
@@ -216,7 +222,13 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row p-6 gap-7 mb-5">
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
-            <Image src="/images/lens.png" alt="Lenses" className="absolute inset-0 w-full h-full object-cover rounded" />
+            <Image
+              src="/images/lens.png"
+              alt="Lenses"
+              className="absolute inset-0 w-full h-full object-cover rounded"
+              width={1000}
+              height={1000}
+            />
           </div>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Phase 1: Lenses</h2>
@@ -229,7 +241,13 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
-            <Image src="/images/guide.png" alt="Travel Guides" className="absolute inset-0 w-full h-full object-cover rounded" />
+            <Image
+              src="/images/guide.png"
+              alt="Travel Guides"
+              className="absolute inset-0 w-full h-full object-cover rounded"
+              width={1000}
+              height={1000}
+            />
           </div>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Phase 2: Travel Guides</h2>
@@ -242,7 +260,13 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
-            <Image src="/images/body.png" alt="Embodiment" className="absolute inset-0 w-full h-full object-cover rounded" />
+            <Image
+              src="/images/body.png"
+              alt="Embodiment"
+              className="absolute inset-0 w-full h-full object-cover rounded"
+              width={1000}
+              height={1000}
+            />
           </div>
           <div className="w-full flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Phase 3: Embodiment</h2>
