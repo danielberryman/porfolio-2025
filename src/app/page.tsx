@@ -7,7 +7,6 @@ import FeatureBlock from './components/FeatureBlock'
 // import dynamic from 'next/dynamic'
 // import { ArrowRightIcon, CalendarIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-const isProd = process.env.NODE_ENV === 'production';
 
 // const SearchClient = dynamic(() => import("./components/SearchClient"), { ssr: false });
 
@@ -42,7 +41,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center">
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
           <Image
-            src={isProd ? "/portfolio-2025/images/headshot.jpg" : "/images/headshot.jpg"}
+            src="/images/headshot.jpg"
             alt="Daniel Berryman"
             className="absolute inset-0 w-full h-full object-cover"
             width={1000}
@@ -110,7 +109,7 @@ export default function Home() {
           title="Performer"
           subtitle="One Voice. Many Worlds. Always Human."
           description="I&apos;m a performer who moves fluidly between worlds—opera, musical theatre, and popular music. Trained as a tenor and storyteller, I bring emotional clarity and vocal versatility to every stage I step on. Whether I’m singing Puccini, Sondheim, or Paul Simon, my goal is the same: to connect, to communicate, and to create moments that feel alive."
-          imageSrc={isProd ? "/portfolio-2025/images/singer3.png" : "/images/singer3.png"}
+          imageSrc="/images/singer3.png"
           imagePosition="right"
           actions={[
             {
@@ -134,7 +133,7 @@ export default function Home() {
           title="Voice Teacher"
           subtitle="Targeted Awareness. Deep Listening."
           description="My teaching is rooted in the old tenors—those who sang with ease, not force. That sound changed my singing, and now it shapes how I teach. I focus on clean cord closure, breath coordination, and subtle muscular control so singers can unlock flexibility across any style."
-          imageSrc={isProd ? "/portfolio-2025/images/teacher3.png" : "/images/teacher3.png"}
+          imageSrc="/images/teacher3.png"
           imagePosition="right"
           actions={[
             {
@@ -159,7 +158,7 @@ export default function Home() {
           title="Software Engineer"
           subtitle="Engineer the Solution. Elevate the System."
           description="I approach software engineering with curiosity, precision, and a drive to improve not just features, but the way we build them. I care about clean execution, scalable systems, and the processes that make great work repeatable. Success isn’t just shipping code—it’s learning from it, refining it, and building stronger foundations for the next problem to solve."
-          imageSrc={isProd ? "/portfolio-2025/images/dev.png" : "/images/dev.png"}
+          imageSrc="/images/dev.png"
           imageAlt="3D Dice"
           imagePosition="right"
           actions={[
@@ -179,7 +178,7 @@ export default function Home() {
           title="Primary Care Technologist"
           subtitle="Tech support for humans—not systems."
           description="As a Primary Care Technologist my goal is to help you understand what you actually need, fix what’s broken, and build systems that support YOUR life—not just enrich the system. My goal is to keep you in charge of your tools, your data, and your direction. I don’t work for the system. I work for you—with clarity, care, and a focus on sovereignty."
-          imageSrc={isProd ? "/portfolio-2025/images/primary_care_tech2.png" : "/images/primary_care_tech2.png"}
+          imageSrc="/images/primary_care_tech2.png"
           imageAlt="3D Dice"
           imagePosition="right"
           actions={[
@@ -205,7 +204,7 @@ export default function Home() {
           title="Theatre For The World"
           subtitle="Theater Belongs to the Makers."
           description="We&apos;re building digital tools and data platforms that invest in the people behind the performance—not to profit from their creativity, but to amplify it. Inspired by models like the Wikimedia Foundation, we believe in infrastructure that supports the community rather than extracting from it. This isn&apos;t about users. It&apos;s about contributors. It&apos;s about reclaiming our role not as the product, but the producers—of culture, of knowledge, of the next generation of theater. The future of theater isn&apos;t something we wait for. It&apos;s something we build, together."
-          imageSrc={isProd ? "/portfolio-2025/images/tftw.png" : "/images/tftw.png"}
+          imageSrc="/images/tftw.png"
           imageAlt="3D Dice"
           imagePosition="right"
           actions={[
@@ -224,7 +223,7 @@ export default function Home() {
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
             <Image
-              src={isProd ? "/portfolio-2025/images/lens.png" : "/images/lens.png"}
+              src="/images/lens.png"
               alt="Lenses"
               className="absolute inset-0 w-full h-full object-cover rounded"
               width={1000}
@@ -243,7 +242,7 @@ export default function Home() {
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
             <Image
-              src={isProd ? "/portfolio-2025/images/guide.png" : "/images/guide.png"}
+              src="/images/guide.png"
               alt="Travel Guides"
               className="absolute inset-0 w-full h-full object-cover rounded"
               width={1000}
@@ -262,7 +261,7 @@ export default function Home() {
         <div className="w-full lg:w-1/3 flex flex-col items-center">
           <div className="w-full relative aspect-[4/4] flex flex-col items-center mb-5">
             <Image
-              src={isProd ? "/portfolio-2025/images/body.png" : "/images/body.png"}
+              src={"/images/body.png"}
               alt="Embodiment"
               className="absolute inset-0 w-full h-full object-cover rounded"
               width={1000}
