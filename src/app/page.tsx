@@ -1,20 +1,9 @@
 "use client";
 
-import Link from 'next/link';
-// import DiceCanvasWrapper from './components/DiceCanvasWrapper'
 import FeatureBlock from './components/FeatureBlock'
-// import SectionDivider from './components/SectionDivider'
-// import Header from './components/Header'
-// import dynamic from 'next/dynamic'
-// import { ArrowRightIcon, CalendarIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import Script from 'next/script';
-import { useState } from 'react';
-// const SearchClient = dynamic(() => import("./components/SearchClient"), { ssr: false });
 
 export default function Home() {
-  const [email, setEmail] = useState('');
-
   return (
     <main id="home">
       <div className="w-full flex flex-col justify-center items-center p-6">
