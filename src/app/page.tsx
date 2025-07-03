@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 // import DiceCanvasWrapper from './components/DiceCanvasWrapper'
 import FeatureBlock from './components/FeatureBlock'
 // import SectionDivider from './components/SectionDivider'
@@ -7,10 +8,14 @@ import FeatureBlock from './components/FeatureBlock'
 // import dynamic from 'next/dynamic'
 // import { ArrowRightIcon, CalendarIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-
+import Script from 'next/script';
+import { useState } from 'react';
+import MailchimpSignup from './components/MailChimpSignup';
 // const SearchClient = dynamic(() => import("./components/SearchClient"), { ssr: false });
 
 export default function Home() {
+  const [email, setEmail] = useState('');
+
   return (
     <main id="home">
       <div className="w-full flex flex-col justify-center items-center p-6">
@@ -51,7 +56,7 @@ export default function Home() {
         <div className="w-full lg:w-1/2 relative aspect-[4/3]">
           <div className="w-full h-full flex items-center justify-center">
             <div className="w-full h-full grid grid-cols-3 grid-rows-2">
-              <a 
+              <a
                 href="https://www.notion.so/22572fd5449b809eafc2ca95141e5f22?v=22572fd5449b80c48ecf000c5b60181a&source=copy_link"
                 target="_blank"
                 className="w-full font-bold p-3 bg-slate-400 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
@@ -63,7 +68,7 @@ export default function Home() {
                 className="w-full font-bold p-3 bg-slate-100 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
                 <span className='text-center'>Join a voice workshop</span>
               </a>
-              <a 
+              <a
                 href="https://calendly.com/danielberrymanvoice/lesson"
                 target="_blank"
                 className="w-full font-bold p-3 bg-slate-200 hover:bg-sky-600 hover:text-white cursor-pointer transition flex items-center justify-center">
@@ -219,6 +224,21 @@ export default function Home() {
       </div>
       <div className="p-5 flex flex-col gap-10">
         <FeatureBlock
+          title="Upper West Side Children's Choir"
+          subtitle="Coming Fall 2025!"
+          description="A community choir for elementary-aged children on the Upper West Side, offering joyful weekly rehearsals, professional voice training, and inspiring performances—including a special guest from Broadway each season. Come sing with us!"
+          imageSrc="/images/uws.png"
+          imageAlt="3D Dice"
+          imagePosition="right"
+          actions={[
+            {
+              label: "Get Updates", onClick: () => {
+                window.open("https://danielberryman.github.io/uwscc/", "_blank");
+              }
+            }
+          ]}
+        />
+        <FeatureBlock
           title="Theatre For The World"
           subtitle="Theater Belongs to the Makers."
           description="We&apos;re building digital tools and data platforms that invest in the people behind the performance—not to profit from their creativity, but to amplify it. Inspired by models like the Wikimedia Foundation, we believe in infrastructure that supports the community rather than extracting from it. This isn&apos;t about users. It&apos;s about contributors. It&apos;s about reclaiming our role not as the product, but the producers—of culture, of knowledge, of the next generation of theater. The future of theater isn&apos;t something we wait for. It&apos;s something we build, together."
@@ -309,6 +329,9 @@ export default function Home() {
         </p>
       </div> */}
       {/* <DiceCanvasWrapper /> */}
+      <div className="flex justify-center items-center min-h-screen">
+        <MailchimpSignup />
+      </div>
       <footer className="w-full flex justify-center items-center bg-slate-100 p-4">
         <p className="text-sm text-gray-600">&copy; {new Date().getFullYear()} All rights reserved.</p>
       </footer>
