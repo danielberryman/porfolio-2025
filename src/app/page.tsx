@@ -10,7 +10,6 @@ import FeatureBlock from './components/FeatureBlock'
 import Image from 'next/image';
 import Script from 'next/script';
 import { useState } from 'react';
-import MailchimpSignup from './components/MailChimpSignup';
 // const SearchClient = dynamic(() => import("./components/SearchClient"), { ssr: false });
 
 export default function Home() {
@@ -329,9 +328,6 @@ export default function Home() {
         </p>
       </div> */}
       {/* <DiceCanvasWrapper /> */}
-      <div className="flex justify-center items-center min-h-screen">
-        <MailchimpSignup />
-      </div>
       <footer className="w-full flex justify-center items-center bg-slate-100 p-4">
         <p className="text-sm text-gray-600">&copy; {new Date().getFullYear()} All rights reserved.</p>
       </footer>
