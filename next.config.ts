@@ -1,7 +1,7 @@
 // next.config.ts
 import type { NextConfig } from 'next';
 
-const repo = '/portfolio-2025'; // <-- ✅ CHANGE THIS to match your repo name
+const repo = 'portfolio-2025';
 const isGhPages = process.env.DEPLOY_TARGET === 'gh-pages';
 const isProd = process.env.NODE_ENV === 'production';
 
